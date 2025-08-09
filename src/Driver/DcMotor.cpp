@@ -1,4 +1,4 @@
-#include "include/Driver/DCMotor.hpp"
+#include "Driver/DCMotor.hpp"
 
 DCMotor::DCMotor(PinName pwm_pin, PinName dir_pin, bool direction, float pwm_freq) : pwm(pwm_pin), dir(dir_pin) {
     pwm.period(1.0 / pwm_freq); // PWM周期を設定
